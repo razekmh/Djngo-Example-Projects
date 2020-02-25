@@ -4,10 +4,11 @@
 
 <h3>Input text: </h3>
 {{fulltext}}
-    {% for word, counttotal in worddict %}
-    {{word}}
+<br>
+<h3>Frequency</h3>
+    {% for word, counttotal in sortedwords %}
+    {{word}} - {{counttotal}}
     <br>
-    {{counttotal}}
     {% endfor %}
 
 
