@@ -6,5 +6,5 @@ def home (request):
 
 def count (request):
     fulltext = request.GET['fulltext']
-    print(fulltext)
-    return render(request, 'count.html')
+
+    return render(request, 'count.html', {'fulltext': fulltext})
