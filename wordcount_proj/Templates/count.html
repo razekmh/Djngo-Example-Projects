@@ -1,6 +1,15 @@
 <h1> Count </h1>
 
-<h2> There are 14 words in your text</h2>
+<h2> There are {{count}} words in your text</h2>
 
 <h3>Input text: </h3>
 {{fulltext}}
+    {% for word, counttotal in worddict %}
+    {{word}}
+    <br>
+    {{counttotal}}
+    {% endfor %}
+
+
+<!-- <h3>Word dict</h3>
+{{worddict}} -->
